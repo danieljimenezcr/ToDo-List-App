@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", Helvetica, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: linear-gradient(
+    to right top,
+    #00a8ff,
+    #6da6ff,
+    #9ba4fb,
+    #bca2f3,
+    #d6a2e8
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card {
+  width: 40vw;
+  border-radius: 25px;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 10px 10px 18px 2px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 10px 10px 18px 2px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 10px 10px 18px 2px rgba(0, 0, 0, 0.38);
+}
+
+.app-title {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.app__title--text {
+  font-size: 25px;
+  color: #8e44ad;
+}
+.task-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.btnCreate {
+    background-image: linear-gradient(to right top, #00a8ff, #6da6ff, #9ba4fb, #bca2f3, #d6a2e8);
+    border-style: none;
+    padding: 8px 25px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.btnCreate:hover {
+    background-image: linear-gradient(to right top, #0071ff, #616bf3, #8566e6, #9d61d9, #af5ecb);
+}
+
+.inputForm {
+    border-radius: 10px;
+    border: 1px solid #b2bec3;
+    width: 65%;
+    padding: 10px;
+}
+.inputForm::placeholder {
+    padding-left: 10px;
+}
+.cardsList { 
+    max-height: 60vh;
+    height: 60vh;
+}
+
+.card {
+    padding: 18px;
+    display: flex;
+    justify-content: space-beetween;
+    list-style: none;
+    width: 90%;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+    border-radius: 10px;
+}
+.checkIcon {
+    cursor: pointer;
+}
+.checkIcon:hover {
+    color: #27ae60;
+}
+.completeIcon {
+  color: #616bf3;
+}
+.task {
+    padding: 10px;
+}
+.trashIcon {
+    cursor: pointer;
+    color: #8566e6;
+}
+.trashIcon:hover {
+    color: #c0392b;
+}
