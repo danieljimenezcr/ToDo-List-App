@@ -82,7 +82,7 @@ main {
     width: 90%;
     box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
     border-radius: 10px;
-    margin-bottom: 16px;
+    margin: 4px 0 18px 12px;
 
 }
 .checkIcon {
@@ -103,4 +103,32 @@ main {
 }
 .trashIcon:hover {
     color: #c0392b;
+}
+
+@media (max-width: 912px) {
+  .main-card {
+    width: 90vw;
+  }
+  .task-form {
+    display: flex;
+    flex-direction: column;
+}
+.inputForm {
+  margin-bottom: 1rem;
+  width: 100%;
+  
+}
+@media (max-width: 820px) {
+  .main-card {
+    width: 90vw;
+  }
+  .task-form {
+    display: flex;
+    flex-direction: column;
+}
+.inputForm {
+  margin-bottom: 1rem;
+  width: 100%;
+  
+}
 }

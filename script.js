@@ -58,8 +58,8 @@ const completeTask = (event) => {
  };
 
  const deleteTask = (event) => {
-  const element = event.target;
-  element = remove.task
-  console.log("eliminar tarea")
+  const parent = event.target.parentElement;
+  console.log(parent);
+  parent.remove();
  };
 })();
