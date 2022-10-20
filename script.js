@@ -1,3 +1,4 @@
+(() => { 
 const btn = document.querySelector("[data-form-btn]");
 const value = ""
 
@@ -16,9 +17,12 @@ const createTask = (event) => {
   titleTask.innerText = value;
   taskContent.appendChild(titleTask);
   
+  
 
   task.appendChild(taskContent);
+  task.appendChild(deleteIcon());
   list.appendChild(task);
+  
 
 };
 
@@ -45,3 +49,17 @@ const completeTask = (event) => {
 
 //   return trashIcon;
 // };
+
+ const deleteIcon = () => {
+    const i = document.createElement("i");
+    i.classList.add("fa-solid", "fa-trash-can", "trashIcon");
+    i.addEventListener("click", deleteTask)
+    return i;
+ };
+
+ const deleteTask = (event) => {
+  const element = event.target;
+  element = remove.task
+  console.log("eliminar tarea")
+ };
+})();
