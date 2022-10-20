@@ -42,67 +42,80 @@ main {
   color: #8e44ad;
 }
 .task-form {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .btnCreate {
-    background-image: linear-gradient(to right top, #00a8ff, #6da6ff, #9ba4fb, #bca2f3, #d6a2e8);
-    border-style: none;
-    padding: 8px 25px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
+  background-image: linear-gradient(
+    to right top,
+    #00a8ff,
+    #6da6ff,
+    #9ba4fb,
+    #bca2f3,
+    #d6a2e8
+  );
+  border-style: none;
+  padding: 8px 25px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
 }
 .btnCreate:hover {
-    background-image: linear-gradient(to right top, #0071ff, #616bf3, #8566e6, #9d61d9, #af5ecb);
+  background-image: linear-gradient(
+    to right top,
+    #0071ff,
+    #616bf3,
+    #8566e6,
+    #9d61d9,
+    #af5ecb
+  );
 }
 
 .inputForm {
-    border-radius: 10px;
-    border: 1px solid #b2bec3;
-    width: 65%;
-    padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b2bec3;
+  width: 65%;
+  padding: 10px;
 }
 .inputForm::placeholder {
-    padding-left: 10px;
+  padding-left: 10px;
 }
-.cardsList { 
-    max-height: 60vh;
-    height: 60vh;
-    overflow-y: scroll;
+.cardsList {
+  max-height: 60vh;
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .card {
-    padding: 18px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 90%;
-    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
-    border-radius: 10px;
-    margin: 4px 0 18px 12px;
-
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 90%;
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  border-radius: 10px;
+  margin: 4px 0 18px 12px;
 }
 .checkIcon {
-    cursor: pointer;
+  cursor: pointer;
 }
 .checkIcon:hover {
-    color: #27ae60;
+  color: #27ae60;
 }
 .completeIcon {
   color: #616bf3;
 }
 .task {
-    padding: 10px;
+  padding: 10px;
 }
 .trashIcon {
-    cursor: pointer;
-    color: #8566e6;
+  cursor: pointer;
+  color: #8566e6;
 }
 .trashIcon:hover {
-    color: #c0392b;
+  color: #c0392b;
 }
 
 @media (max-width: 912px) {
@@ -112,23 +125,22 @@ main {
   .task-form {
     display: flex;
     flex-direction: column;
-}
-.inputForm {
-  margin-bottom: 1rem;
-  width: 100%;
-  
-}
-@media (max-width: 820px) {
-  .main-card {
-    width: 90vw;
   }
-  .task-form {
-    display: flex;
-    flex-direction: column;
-}
-.inputForm {
-  margin-bottom: 1rem;
-  width: 100%;
-  
-}
+  .inputForm {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  @media (max-width: 820px) {
+    .main-card {
+      width: 90vw;
+    }
+    .task-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .inputForm {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
 }
