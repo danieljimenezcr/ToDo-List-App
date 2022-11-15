@@ -7,6 +7,9 @@ const value = "";
 const createTask = (event) => {
   event.preventDefault();
   const input = document.querySelector("[data-form-input]");
+  const calendar =  document.querySelector("[data-form-date]");
+  const date = calendar.value;
+  const dateFormat = moment(date).format('DD/MM/YYYY');
   const value = input.value;
   const task = document.createElement("li");
   const list = document.querySelector("[data-list]");

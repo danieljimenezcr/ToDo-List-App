@@ -6,10 +6,9 @@ const checkComplete = () => {
 };
 
 const completeTask = (event) => {
-  console.log(event);
   const element = event.target;
   element.classList.toggle("fas");
   element.classList.toggle("completeIcon");
 };
 
-export default checkComplete;
+export default checkComplete;  

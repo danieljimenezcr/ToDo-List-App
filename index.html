@@ -20,6 +20,7 @@
             <div>
                 <form class="task-form">
                     <input type="text" name="task" placeholder="Add your new Todo" autocomplete="off" class="inputForm" data-form-input>
+                    <input  type="datetime-local" data-form-date placeholder="YYYY/MM/DD">
                     <button type="submit" class="btnCreate" data-form-btn>
                         Add <i class="fa-solid fa-circle-plus"></i>
                     </button>
@@ -30,6 +31,7 @@
         </div>
     </main>
     <script type="module" src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://kit.fontawesome.com/0cc0cccb5f.js" crossorigin="anonymous"></script>
 </body>
 </html>
